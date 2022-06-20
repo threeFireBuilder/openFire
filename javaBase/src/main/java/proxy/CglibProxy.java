@@ -2,8 +2,8 @@ package proxy;
 
 import java.lang.reflect.Method;
 
-import net.sf.cglib.MethodInterceptor;
-import net.sf.cglib.MethodProxy;
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
 
 public class CglibProxy implements MethodInterceptor {
 

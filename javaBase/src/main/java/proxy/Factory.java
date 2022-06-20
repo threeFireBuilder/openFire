@@ -15,11 +15,8 @@ public class Factory {
 		Enhancer e = new Enhancer();
 		
 		e.setSuperclass(Base.class);
-		
-		 //�ص������Ĳ���Ϊ���������CglibProxy�������ǿĿ������õ��Ǵ��������CglibProxy�е�intercept����  
-        e.setCallback(proxy);  
-        // �˿̣�base���ǵ�����Ŀ���࣬������ǿ����Ŀ����  
-        Base base = (Base) e.create();  
+        e.setCallback(proxy);
+        Base base = (Base) e.create();
 		
 		return base;
 		
