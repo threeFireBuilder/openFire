@@ -1,4 +1,4 @@
-package demospringbootexample06.demo.ApplicationEventPublisherAware;
+package demo.ApplicationEventPublisherAware;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;

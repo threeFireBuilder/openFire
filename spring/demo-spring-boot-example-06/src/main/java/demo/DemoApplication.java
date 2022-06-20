@@ -72,9 +72,6 @@ public class DemoApplication {
         SpringApplication application = new SpringApplication(DemoApplication.class);
         application.addInitializers(new MyApplicationContextInitializer());
         application.run(args);
-
-
-
     }
 
 }

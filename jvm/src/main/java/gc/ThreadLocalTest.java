@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ThreadLocalTest {
 
-    private List<String> messages = new ArrayList <>();
+    private List<String> messages = new ArrayList<>();
 
     public static final ThreadLocal<ThreadLocalTest> holder = ThreadLocal.withInitial(ThreadLocalTest::new);
 
