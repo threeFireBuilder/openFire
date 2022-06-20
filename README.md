@@ -3,10 +3,11 @@
    Java基础知识学习 
 # 设计模式
 # jvm
+    
 # Redis
     redis学习
 # Spring
     spring学习
-# leetcode
+# algo
     算法学习
 #总结计划
