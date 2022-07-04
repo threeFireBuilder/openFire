@@ -7,4 +7,6 @@
     spring学习
 ##algo
     算法学习
+##设计模式 allDesignMode
+    设计模式学习
 #总结计划

@@ -13,6 +13,8 @@
         <module>jvm</module>
         <module>spring</module>
         <module>algo</module>
+        <module>allDesignMode</module>
+        <module>java-agent</module>
     </modules>
 
     <dependencies>
