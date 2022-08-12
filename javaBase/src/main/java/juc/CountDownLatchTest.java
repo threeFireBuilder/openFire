@@ -1,6 +1,7 @@
 package juc;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author zhangyan
@@ -29,7 +30,7 @@ public class CountDownLatchTest {
             public void run() {
                 try {
                     System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
-                    Thread.sleep(3000);
+                    Thread.sleep(7000);
                     System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
                     latch.countDown();
                 } catch (InterruptedException e) {
@@ -40,7 +41,8 @@ public class CountDownLatchTest {
 
         try {
             System.out.println("等待2个子线程执行完毕...");
-            latch.await();
+            latch.await(2, TimeUnit.SECONDS);
+//             latch.await();
             System.out.println("2个子线程已经执行完毕");
             System.out.println("继续执行主线程");
         } catch (InterruptedException e) {
