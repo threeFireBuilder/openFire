@@ -1,6 +1,8 @@
 package base;
 
 import java.util.*;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author zhangyan
@@ -34,5 +36,18 @@ public class TestBase {
             }
         }
         System.out.println(endTime);
+        System.out.println(UUID.randomUUID());
+
+        ReentrantLock lock = new ReentrantLock();
+
+        try{
+            lock.lock();
+
+            Condition condition = lock.newCondition();
+        }finally {
+            lock.unlock();
+        }
+
+
     }
 }
